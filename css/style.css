@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+header{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    
+}
+
+section{
+    margin: 80px 0px;
+}
+
+
+
+/* Container header */
+
+.container-h{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+
+}
+
+/* sezione di sinistra */
+
+.c-plan{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background-color: red;
+}
+
+.logo-h{
+    padding: 0px 15px;
+}
+
+.logo-h img{
+    height: 20px;
+}
+
+/* Sezione di destra */
+
+.c-support{
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    display: flex;
+    background-color: yellow;
+}
+
+/* Generale */
+
+.c-link{
+    list-style: none;
+    align-items: center;
+}
+
+.c-link li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.button{
+    background-color: #0061ff;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.button-s2{
+    color: gray;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid gray;
+}
+
+.full-w{
+    width: 100%;
+}
+
+
+.container-big{
+    width: 70%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.container{
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: blue;
+}
+
+.reset-link{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* Main */
+
+.jumbo{
+    width: 100%;
+    background-color: aquamarine;
+    padding-top: 150px;
+
+}
+
+/* Contenitore Jumbo */
+
+
+
+.container-box{
+    display: flex;
+}
+
+/* Titolone */
+.container-big h1{
+
+}
+
+/* box sinistra */
+
+.free-plan{
+    width: 40%;
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.free-plan a{
+    display: inline-block;
+}
+
+.box-txt{
+    padding: 15px;
+}
+
+.arrow{
+    font-size: 50px;
+    margin: 60px 0px 5px 0px;
+}
+
+/* box destra */
+
+.big-img{
+    width: 60%;
+    background-color: green;
+}
+
+.big-img img{
+    width: 100%;
+}
+
+/* business plan */
+
+.business-plan{
+    margin-top: 80px;
+}
+
+.select-card{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+
+/* Card */
+
+.card{
+    margin: 10px 10px;
+    width: calc(100% / 3 - 20px);
+    background-color: chartreuse;
+    border: 1px solid gray;
+    
+}
+
+/* Header card */
+
+.card-header{
+    border-bottom: 1px solid gray;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0px;
+}
+
+
+/* Main card */
+
+.card-main{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+
+.card-main > span{
+    display: inline-block;
+    
+}
+
+.card-main hr{
+    width: 20%;
+    margin: 30px 0px;
+    
+}
+
+.card-description{
+    margin-top: 40px;
+}
+
+.box-card{
+    display: flex;
+    margin: 10px 0px;
+}
+
+.card-description .icon{
+    width: 10%;
+}
+
+.card-description .desc{
+    width: 90%;
+}
+
+
+/* Card orizzontale */
+
+.hz-container{
+    width: 100%;
+    padding: 10px;
+}
+
+.hz-card{
+    width: 100%;
+    margin-top: 40px;
+    border: 1px solid gray;
+    background-color: aquamarine;
+}
+
+.hz-card-main{
+    display: flex;
+}
+
+.hz-card-main .desc{
+    width: 65%;
+    padding: 20px;
+}
+
+.hz-card-main .desc span{ 
+    margin: 20px 0px 40px 0px;
+}
+
+.hz-card-main .buy{
+    width: 35%;
+    padding: 10px;
+}
+
+.buy-container{
+    margin: 10px 0px;
+    text-align: center;
+    display: flex;
+}
+
+
+/* Sezione partner */
+
+.box-partner{
+    display: flex;
+}
+
+.box-partner .img-box{
+    width: 60%;
+    background-color: red;
+
+}
+
+.box-partner .img-box img{
+    width: 100%;
+
+}
+
+.box-partner .desc{
+    width: 40%;
+    background-color: aqua;
+
+}
+
+/* Sezione functions */
+
+.container-function{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-function{
+    width: calc(100% / 3 - 20px);
+    background-color: green;
+    margin-top: 20px;
+
+}
+
+.card-function img{
+    width: 100%;
+}
+
+/* Sezione multibox */
+
+.multibox{
+    width: 100%;
+    display: flex;
+    height: 60vh;
+    min-height: 480px;
+
+}
+
+.colum-box{
+    width: calc(100% / 3);
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colum-box .case{
+    width: calc(100% / 2);
+    height: calc(100% / 2);
+    background-color: red;
+
+}
+
+#bg-design{
+    background-color: #a2d39b;
+}
+
+#bg-uni{
+    background-color: #61082b;
+}
+
+#bg-uf{
+    background-color: #0093ce;
+}
+
+#bg-top{
+    background-color: #ff1c1c;
+}
+
+
+
