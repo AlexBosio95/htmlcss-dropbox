@@ -413,7 +413,7 @@ header{
 }
 
 .card{
-    width: calc(100% / 3 - 20px);
+    width: calc(100% / 3 - 15px);
     border: 1px solid rgba(128, 128, 128, 0.5);
     padding-bottom: 30px;
     
@@ -639,14 +639,16 @@ header{
     border-top: 1px solid gray;
     display: flex;
     flex-wrap: wrap;
-    cursor: pointer;
-    
+    cursor: pointer; 
+}
+
+.requests:last-child{
+    border-bottom: 1px solid gray;
 }
 
 .request{
     margin: 40px 0px;
     width: 90%;
-    
 }
 
 
