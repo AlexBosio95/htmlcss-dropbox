@@ -14,15 +14,11 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-
-
-header{
-    position: fixed;
-    background-color: var(--w-color);
-    width: 100%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    z-index: 1;
+html{
+    scroll-behavior: smooth;
 }
+
+
 
 
 
@@ -30,21 +26,6 @@ header{
 
 
 /* GENERALE */
-
-.c-link{
-    list-style: none;
-    align-items: center;
-}
-
-.c-link li{
-    display: inline-block;
-    padding: 0px 15px;
-}
-
-
-
-
-
 
 
 /* Bottoni */
@@ -208,6 +189,58 @@ header{
 
 /* HEADER */
 
+header{
+    position: fixed;
+    background-color: var(--w-color);
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px;
+    z-index: 1;
+}
+
+.c-link{
+    list-style: none;
+    align-items: center;
+}
+
+.c-link li{
+    display: inline-block;
+    padding: 18px 15px;
+}
+
+.c-link li{
+    position: relative;
+    
+}
+
+.c-link li::after{
+    content: '';
+    position: absolute;
+    background-color: dimgray;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0px;
+    
+}
+
+.c-link li:hover:after{
+    content: '';
+    position: absolute;
+    background-color:dimgray;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -3px;
+}
+
+.c-link li[title]:hover::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+}
 
 
 
@@ -228,7 +261,7 @@ header{
     width: 100%;
     align-items: center;
     display: flex;
-    padding: 18px 0px;
+    /* padding: 18px 0px; */
 }
 
 .logo-h{
@@ -250,7 +283,7 @@ header{
     flex-direction: row-reverse;
     align-items: center;
     display: flex;
-    padding: 18px 0px;
+    /* padding: 18px 0px; */
 }
 
 
@@ -348,16 +381,33 @@ header{
     margin: 40px 0px;
 }
 
-.select-plan span{
-    margin-right: 60px;
+.select-plan{
+    display: flex;
 }
 
-.select-plan span::before{
+.select-plan .checkbutton{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 30px 0px 0px;
+}
+
+.select-plan .radus-off{
+    margin: 10px;
     content: '';
     border: 1px solid gray;
-    padding: 0px 8px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
+}
 
+.select-plan .radus-on{
+    margin: 10px;
+    content: '';
+    border: 5px solid var(--active-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
 
 
@@ -370,6 +420,7 @@ header{
     margin: 10px 10px;
     width: calc(100% / 3 - 20px);
     border: 1px solid rgba(128, 128, 128, 0.5);
+    padding-bottom: 30px;
     
 }
 
@@ -548,6 +599,7 @@ header{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(191deg) brightness(102%) contrast(102%);
 }
 
 .big-case{

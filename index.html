@@ -37,7 +37,7 @@
                     <li><a class="reset-link standard-color" href="">Supporto</a></li>
                     <li><a class="reset-link standard-color" href="">Contatta l'uffico vendite</a></li>
                     <li><a class="reset-link standard-color" href="">Accedi</a></li>
-                    <li><a class="reset-link button-s" href="">Inizia</a></li>
+                    <li title="excluded"><a class="reset-link button-s" href="#sel-plan">Inizia</a></li>
                 </ul>
 
             </div>
@@ -64,10 +64,10 @@
                                     modo intelligente e integato per ottimizzare il flusso di lavoro esistente.</p>
                             </div>
 
-                            <a class="button" href="">Inizia la tua prova Gratuita</a>
+                            <a class="button" href="#sel-plan">Inizia la tua prova Gratuita</a>
                             <a class="reset-link standard-color" href="">Annulla in qualsiasi momento</a>
                             <div>
-                                <a class="arrow standard-color" href=""><i class="fa-solid fa-arrow-down"></i></a>
+                                <a class="arrow standard-color" href="#sel-plan"><i class="fa-solid fa-arrow-down"></i></a>
                             </div>
 
                         </div>
@@ -86,9 +86,16 @@
 
                 <h1 class="titolo margin-s">Trova il piano business che fa per te</h1>
 
-                <div class="select-plan st-font">
-                    <span>&nbsp;Fatturazione mensile</span>
-                    <span>&nbsp;Fatturazione annuale</span>
+                <div class="select-plan st-font" id="sel-plan">
+                    <div class="checkbutton">
+                        <div class="radus-on"></div>
+                        <span>Fatturazione mensile</span>
+                    </div>
+
+                    <div class="checkbutton">
+                        <div class="radus-off"></div>
+                        <span>Fatturazione annuale</span>
+                    </div>
                 </div>
 
 
@@ -559,6 +566,8 @@
         </section>
 
         <section class="multibox">
+
+            <!-- Colonna sx-->
             <div class="colum-box">
                 <div class="case bg-design">
                     <div class="cont-img">
@@ -590,6 +599,8 @@
 
             </div>
 
+            <!-- Colonna cemtrale -->
+
             <div class="colum-box">
                 <div class="big-case">
                     <div class="header-case">
@@ -606,6 +617,8 @@
 
             </div>
 
+
+            <!-- Colonna dx -->
             <div class="colum-box">
                 <div class="case bg-wbr">
                     <div class="cont-img">
